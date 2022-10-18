@@ -1,0 +1,271 @@
+:root{
+
+--padding:8%
+}
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+html{
+    font-family: 'Paytone One', sans-serif;    font-size: 1em;
+  
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(21, 21, 42);
+    display: flex;
+    flex-direction: column;
+}
+span{
+    color: rgb(255, 255, 255);
+}
+nav h2{
+    color: red;
+    font-size: 2.2em;
+    font-weight: 700;
+}
+nav {
+    padding: 20px 150px;
+    padding-top:2.2rem ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+    
+
+}
+nav ul li a{
+  color: azure;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1.8em;
+  font-weight: 800;
+  transition: 0.4s;
+  
+
+}
+nav ul li a:hover{
+    color: red;
+}
+.con{
+ flex-grow: 1;
+ padding: 0 var(--padding);
+    color: rgb(236, 4, 4);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+}
+.text{
+    position: relative;
+    top: 20px;
+}
+h1 {
+    font-size: 4.64rem;
+    margin: 1.7rem  0;
+}
+h3{
+    font-size: 1.5rem;
+
+}
+h4{
+ letter-spacing: 0.12rem;
+ color: rgb(241, 129, 129);
+ font-size: 2.5rem;
+}
+h5{
+    font-size: 4rem;
+    letter-spacing: 0.12rem;
+    margin: 1.7rem  0;
+color: red;
+}
+p{
+    color: azure;
+    letter-spacing: 1px;
+    line-height: 3rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+.by {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: red;
+    font-size: 2.2em;
+  font-weight: 900;
+  padding: 0.81rem 1.87rem;
+  border-radius: 30px; 
+  transition: 0.4s;
+  position: relative;
+  top:70px;
+}
+.text a:hover{
+    background-color: transparent;
+    border: 2px solid rgb(236, 0, 0);
+}
+
+.imga{
+    width: 40%;
+    height: 60%;
+    position: relative;
+    align-self: flex-end;
+
+    
+}
+.imga img {
+    position: absolute;
+    bottom: 150px;
+    
+    height: 100%;
+    left: 50% ;
+    transform: translateX(-50%);
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  var(--padding);
+    background-color: rgb(39, 39, 39);
+}
+.img{
+
+    width: 35%;
+}
+.text{
+    width: 35%;
+    position: relative;
+ bottom: 10%;
+}
+.text h1{
+    color: red;
+                                                         ;
+}
+.serves {
+    background-color:rgb(21, 21, 42);
+    padding: 2em var(--padding);
+}
+.serves h5{
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card{
+    width: 500px;
+    background-color: rgb(39, 39, 39);
+    border-radius: 20px;
+    padding: 1.3rem 2rem    ;
+    text-align: center;
+}
+.p{
+    font-size: 30px;
+    margin: 2rem;
+    text-align: center;
+}
+.card i{
+    font-size: 5rem;
+    text-align:center;
+    color: red;
+    margin: 4rem;
+}
+h6{
+    font-size:3rem;
+    color: rgb(255, 159, 159);
+    text-align: center;
+    margin: 2rem;
+}
+#mune{
+    display: none;
+    position: relative;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    user-select: none;
+
+}
+#mune span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    background-color:red;
+    border-radius: 6px;
+    transform-origin: 0 0;
+    transition: 0.4s;
+    margin-bottom: 5px;
+    
+}
+@media screen and (max-width:575px) {
+    :root{
+        --padding:1.5rem;
+
+    }
+    html    {
+        font-size: 13px;
+    }
+ .imga img{
+    display: none;
+ }
+ nav ul{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color:rgb(39, 39, 39) ;                                                                  
+ }
+ nav a{
+    display: none;
+ }
+ nav{
+    position: fixed;
+     left: 0;
+    right: 0;
+    top: 0;
+    height: 82px;
+    padding-top: 0;
+    text-align: center;
+    background-color: rgb(21, 21, 42);
+    border-bottom: 1px solid rgb(39, 39, 39);
+    z-index: 100;
+}
+nav ul li a{
+    display: block;
+    text-align: center;
+    margin: 40px;
+}
+
+text{
+    position: relative;
+    bottom: 0px;
+}
+h3{
+    margin-top: 50px;
+
+}
+.by{
+    font-size: 1rem;
+}
+nav h2{
+    position: absolute;
+    left: 25px;
+    top: 20px;
+}
+#mune{
+    display: block;
+ position: relative;
+ right: 0;
+}
+
+}
